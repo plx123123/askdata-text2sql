@@ -1,0 +1,17 @@
+公开发布文件清单
+
+根目录：
+- README.md
+- requirements.txt
+- LICENSE
+- .gitignore
+
+源码目录：
+- askdata_pipeline/
+- cot_planning/
+- mcp_router/
+- schema_indexing/
+- schema_retrieval/
+- sql/
+- sql_generation/
+- tests/
