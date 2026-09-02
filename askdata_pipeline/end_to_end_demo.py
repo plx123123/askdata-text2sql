@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 from .objects import PipelineConfig
@@ -14,6 +15,9 @@ def main() -> None:
     执行：
         python -m askdata_pipeline.end_to_end_demo
     """
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     query = "查询总交易笔数大于50000的利率是多少"
 
     pipeline = AskDataText2SQLPipeline(

@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runtime_data/
+*.db
+*.sqlite3
+docx_render/
+.DS_Store
