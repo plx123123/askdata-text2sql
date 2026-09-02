@@ -34,7 +34,7 @@ def main() -> None:
     示例：
         export DASHSCOPE_API_KEY="你的APIKey"
         export DASHSCOPE_CODER_MODEL="qwen-plus"
-        python -m sql_generation.sql_generation_demo
+        python -m sql_generation.sql_generation
     """
     cot_text = build_demo_cot_text()
 

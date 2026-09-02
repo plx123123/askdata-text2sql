@@ -53,7 +53,7 @@ def main() -> None:
     示例：
         export DASHSCOPE_API_KEY="你的APIKey"
         export DASHSCOPE_COT_MODEL="qwen-plus"
-        python -m cot_planning.cot_planning_demo
+        python -m cot_planning.cot_planning
     """
     planner = CotPlanner(
         thinking_client=ThinkingModelClient(

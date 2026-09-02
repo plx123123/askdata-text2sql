@@ -632,7 +632,7 @@ class HybridSchemaRetrievalService:
 if __name__ == "__main__":
     # 这里复用完整链路 Demo 中的测试数据库和业务元数据。
     # 该 import 只用于示例，不影响服务类本身被其他模块导入。
-    from schema_retrieval.hybrid_rerank_schema_demo import (
+    from schema_retrieval.hybrid_rerank_schema import (
         create_demo_database,
         get_business_meta,
     )

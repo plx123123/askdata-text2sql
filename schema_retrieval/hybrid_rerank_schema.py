@@ -20,7 +20,7 @@ from schema_retrieval.rerank_client import (
     RerankDocument,
 )
 from schema_retrieval.sqlite_loader import SQLiteSchemaLoader
-from schema_retrieval.vector_recall_demo import (
+from schema_retrieval.vector_recall import (
     AliyunEmbeddingClient,
     AliyunEmbeddingConfig,
     KeywordExtractor,
@@ -50,7 +50,7 @@ def create_demo_database() -> Path:
     """
     创建 Demo 数据库。
     """
-    db_path = Path(tempfile.gettempdir()) / "text2sql_hybrid_rerank_schema_demo.db"
+    db_path = Path(tempfile.gettempdir()) / "text2sql_hybrid_rerank_schema.db"
 
     if db_path.exists():
         db_path.unlink()

@@ -5,8 +5,8 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DB_PATH = PROJECT_ROOT / "runtime_data" / "trade_demo.db"
-DEFAULT_SQL_PATH = PROJECT_ROOT / "sql" / "create_trade_demo.sql"
+DEFAULT_DB_PATH = PROJECT_ROOT / "runtime_data" / "trade.db"
+DEFAULT_SQL_PATH = PROJECT_ROOT / "sql" / "create_trade.sql"
 
 
 def create_demo_db(

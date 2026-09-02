@@ -12,7 +12,7 @@ class MilvusSchemaIndexConfig:
     """Milvus Schema 索引配置。"""
 
     # 目前milvus不启用服务，保存在本地生成一个db文件
-    uri: str = "./schema_index_demo.db"
+    uri: str = "./schema_index.db"
     token: str = ""
 
     field_collection_name: str = "schema_field_index_demo"

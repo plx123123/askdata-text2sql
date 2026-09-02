@@ -15,7 +15,7 @@ def create_demo_database() -> Path:
     - users: 用户维表
     - orders: 订单事实表
     """
-    db_path = Path(tempfile.gettempdir()) / "text2sql_schema_retrieval_demo.db"
+    db_path = Path(tempfile.gettempdir()) / "text2sql_schema_retrieval.db"
 
     if db_path.exists():
         db_path.unlink()

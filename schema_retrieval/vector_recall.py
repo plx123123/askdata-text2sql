@@ -481,7 +481,7 @@ def create_demo_database() -> Path:
     - trade_summary: 用户交易汇总表
     - interest_info: 用户利率信息表
     """
-    db_path = Path(tempfile.gettempdir()) / "text2sql_vector_recall_demo.db"
+    db_path = Path(tempfile.gettempdir()) / "text2sql_vector_recall.db"
 
     if db_path.exists():
         db_path.unlink()

@@ -31,10 +31,10 @@ schema_retrieval/
   rerank_client.py               # Rerank 精排
 
   # Demo
-  keyword_recall_demo.py         # 关键词召回 Demo
-  vector_recall_demo.py          # 向量召回 Demo
-  hybrid_recall_demo.py          # 关键词 + 向量 + RRF 融合 Demo
-  hybrid_rerank_schema_demo.py   # 混合召回 + Rerank + SchemaGraph Demo
+  keyword_recall.py              # 关键词召回 Demo
+  vector_recall.py               # 向量召回 Demo
+  hybrid_recall.py               # 关键词 + 向量 + RRF 融合 Demo
+  hybrid_rerank_schema.py        # 混合召回 + Rerank + SchemaGraph Demo
 
   README.md
 ```
@@ -64,25 +64,25 @@ export DASHSCOPE_WORKSPACE_ID="你的WorkspaceId"
 ### 1. 关键词召回
 
 ```bash
-python -m schema_retrieval.keyword_recall_demo
+python -m schema_retrieval.keyword_recall
 ```
 
 ### 2. 向量召回
 
 ```bash
-python -m schema_retrieval.vector_recall_demo
+python -m schema_retrieval.vector_recall
 ```
 
 ### 3. 混合召回
 
 ```bash
-python -m schema_retrieval.hybrid_recall_demo
+python -m schema_retrieval.hybrid_recall
 ```
 
 ### 4. 混合召回 + Rerank + SchemaGraph
 
 ```bash
-python -m schema_retrieval.hybrid_rerank_schema_demo
+python -m schema_retrieval.hybrid_rerank_schema
 ```
 
 ---

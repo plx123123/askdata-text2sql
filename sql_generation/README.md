@@ -13,13 +13,13 @@ sql_generation/
 ├── prompt_builder.py       # Coder Prompt构建
 ├── coder_client.py         # Coder模型调用
 ├── sql_generator.py        # SQL生成主流程
-└── sql_generation_demo.py  # Demo
+└── sql_generation.py       # Demo
 ```
 
 ## 运行
 
 ```bash
-python -m sql_generation.sql_generation_demo
+python -m sql_generation.sql_generation
 ```
 
 不配置环境变量时走 Mock。
@@ -30,7 +30,7 @@ python -m sql_generation.sql_generation_demo
 export DASHSCOPE_API_KEY="你的APIKey"
 export DASHSCOPE_CODER_MODEL="qwen-plus"
 
-python -m sql_generation.sql_generation_demo
+python -m sql_generation.sql_generation
 ```
 
 ## 执行请求格式

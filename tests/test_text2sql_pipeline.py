@@ -6,7 +6,7 @@ from askdata_pipeline.text2sql_pipeline import AskDataText2SQLPipeline
 
 def test_text2sql_pipeline_runs_end_to_end_with_mock_models(tmp_path):
     pipeline = AskDataText2SQLPipeline(
-        PipelineConfig(db_path=tmp_path / "trade_demo.db")
+        PipelineConfig(db_path=tmp_path / "trade.db")
     )
 
     result = pipeline.run(

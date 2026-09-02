@@ -19,7 +19,7 @@ from sql_generation import (
     SqlGenerator,
 )
 
-from .demo_data import create_trade_demo_database, get_trade_business_meta
+from .data import create_trade_demo_database, get_trade_business_meta
 from .local_clients import LocalHashEmbeddingClient, SimpleKeywordExtractor
 from .objects import PipelineConfig, PipelineResult, StepExecutionLog
 

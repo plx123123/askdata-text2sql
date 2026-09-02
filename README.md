@@ -163,7 +163,7 @@ pip install -r requirements.txt
 ### 运行端到端 Demo
 
 ```bash
-python -m askdata_pipeline.end_to_end_demo
+python -m askdata_pipeline.end_to_end
 ```
 
 Demo 会自动创建本地演示库，并打印：

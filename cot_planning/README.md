@@ -11,13 +11,13 @@ cot_planning/
 ├── prompt_builder.py      # Prompt构建
 ├── thinking_client.py     # 思考模型调用，支持流式输出
 ├── cot_planner.py         # CoT规划主流程，支持 plan 和 plan_stream
-└── cot_planning_demo.py   # 流式输出 Demo
+└── cot_planning.py        # 流式输出 Demo
 ```
 
 ## 运行
 
 ```bash
-python -m cot_planning.cot_planning_demo
+python -m cot_planning.cot_planning
 ```
 
 不配置环境变量时走 Mock 流式输出。
@@ -28,5 +28,5 @@ python -m cot_planning.cot_planning_demo
 export DASHSCOPE_API_KEY="你的APIKey"
 export DASHSCOPE_COT_MODEL="qwen-plus"
 
-python -m cot_planning.cot_planning_demo
+python -m cot_planning.cot_planning
 ```

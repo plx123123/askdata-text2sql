@@ -9,7 +9,7 @@ from typing import List
 from schema_retrieval.bm25 import BM25Index
 from schema_retrieval.sqlite_loader import SQLiteSchemaLoader
 
-from schema_retrieval.vector_recall_demo import (
+from schema_retrieval.vector_recall import (
     AliyunEmbeddingClient,
     AliyunEmbeddingConfig,
     KeywordExtractor,
@@ -58,7 +58,7 @@ def create_demo_database() -> Path:
     - trade_summary: 用户交易汇总表
     - interest_info: 用户利率信息表
     """
-    db_path = Path(tempfile.gettempdir()) / "text2sql_hybrid_recall_demo.db"
+    db_path = Path(tempfile.gettempdir()) / "text2sql_hybrid_recall.db"
 
     if db_path.exists():
         db_path.unlink()

@@ -10,7 +10,7 @@ class PipelineConfig:
     """端到端流程配置。"""
 
     database_name: str = "trade_db"
-    db_path: str | Path = "runtime_data/trade_demo.db"
+    db_path: str | Path = "runtime_data/trade.db"
     sample_size: int = 5
 
 

@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from askdata_pipeline.demo_data import create_trade_demo_database
+from askdata_pipeline.data import create_trade_demo_database
 from mcp_router.objects import MCPExecutionRequest
 from mcp_router.sqlite_executor import SQLiteMCPExecutor
 
 
 def test_sqlite_mcp_executor_runs_readonly_select(tmp_path):
-    db_path = create_trade_demo_database(tmp_path / "trade_demo.db")
+    db_path = create_trade_demo_database(tmp_path / "trade.db")
     executor = SQLiteMCPExecutor(
         database="trade_db",
         db_path=db_path,
@@ -26,7 +26,7 @@ def test_sqlite_mcp_executor_runs_readonly_select(tmp_path):
 
 
 def test_sqlite_mcp_executor_rejects_write_sql_in_readonly_mode(tmp_path):
-    db_path = create_trade_demo_database(tmp_path / "trade_demo.db")
+    db_path = create_trade_demo_database(tmp_path / "trade.db")
     executor = SQLiteMCPExecutor(
         database="trade_db",
         db_path=db_path,

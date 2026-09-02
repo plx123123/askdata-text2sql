@@ -5,11 +5,11 @@ from pathlib import Path
 
 from mcp_router import MCPRouter, SQLiteMCPExecutor
 
-from .create_demo_db import create_demo_db
+from .create_db import create_demo_db
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = PROJECT_ROOT / "runtime_data" / "trade_demo.db"
+DB_PATH = PROJECT_ROOT / "runtime_data" / "trade.db"
 
 
 def main() -> None:

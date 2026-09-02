@@ -153,7 +153,7 @@ def main() -> None:
         pip install pymilvus milvus-lite numpy
 
     执行：
-        python -m schema_indexing.build_index_demo
+        python -m schema_indexing.build_index
 
     如果要使用阿里云真实 Embedding：
         export DASHSCOPE_API_KEY="你的APIKey"
@@ -171,7 +171,7 @@ def main() -> None:
 
     milvus_client = MilvusSchemaIndexClient(
         MilvusSchemaIndexConfig(
-            uri=os.getenv("SCHEMA_MILVUS_URI", "./schema_index_demo.db"),
+            uri=os.getenv("SCHEMA_MILVUS_URI", "./schema_index.db"),
             token=os.getenv("SCHEMA_MILVUS_TOKEN", ""),
             field_collection_name=os.getenv("SCHEMA_FIELD_COLLECTION", "schema_field_index_demo"),
             relation_collection_name=os.getenv("SCHEMA_RELATION_COLLECTION", "schema_relation_index_demo"),

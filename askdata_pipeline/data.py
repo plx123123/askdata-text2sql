@@ -12,7 +12,7 @@ def create_trade_demo_database(db_path: str | Path) -> Path:
     - trade_summary：用户交易汇总表
     - interest_info：用户利率信息表
 
-    这里直接读取 sql/create_trade_demo.sql，方便你单独查看和修改测试数据。
+    这里直接读取 sql/create_trade.sql，方便你单独查看和修改测试数据。
     """
     db_path = Path(db_path)
 
@@ -22,7 +22,7 @@ def create_trade_demo_database(db_path: str | Path) -> Path:
     db_path.parent.mkdir(parents=True, exist_ok=True)
 
     project_root = Path(__file__).resolve().parents[1]
-    sql_path = project_root / "sql" / "create_trade_demo.sql"
+    sql_path = project_root / "sql" / "create_trade.sql"
     sql_text = sql_path.read_text(encoding="utf-8")
 
     conn = sqlite3.connect(str(db_path))

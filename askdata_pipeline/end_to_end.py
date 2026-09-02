@@ -13,7 +13,7 @@ def main() -> None:
     端到端 Demo。
 
     执行：
-        python -m askdata_pipeline.end_to_end_demo
+        python -m askdata_pipeline.end_to_end
     """
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -23,7 +23,7 @@ def main() -> None:
     pipeline = AskDataText2SQLPipeline(
         PipelineConfig(
             database_name="trade_db",
-            db_path=Path("runtime_data") / "trade_demo.db",
+            db_path=Path("runtime_data") / "trade.db",
             sample_size=5,
         )
     )

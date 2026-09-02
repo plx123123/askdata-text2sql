@@ -6,7 +6,7 @@ from askdata_pipeline.text2sql_pipeline import AskDataText2SQLPipeline
 
 def test_schema_retrieval_keeps_metric_output_and_join_columns(tmp_path):
     pipeline = AskDataText2SQLPipeline(
-        PipelineConfig(db_path=tmp_path / "trade_demo.db")
+        PipelineConfig(db_path=tmp_path / "trade.db")
     )
 
     result = pipeline.schema_retrieval_service.retrieve(
