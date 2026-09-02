@@ -1,4 +1,4 @@
-# AskData Text2SQL Demo
+# AskData Text2SQL
 
 面向业务人员的自然语言取数 Demo：从自然语言 Query 出发，经过 Schema 索引与混合检索、结构化查询计划、SQL 生成和只读工具执行，返回可验证的查询结果。
 
